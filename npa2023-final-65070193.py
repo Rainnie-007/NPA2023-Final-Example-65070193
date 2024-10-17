@@ -42,7 +42,7 @@ while True:
     # Send a GET request to the Webex Teams messages API.
     # - Use the GetParameters to get only the latest message.
     # - Store the message in the "r" variable.
-    r = requests.get("https://webexapis.com/v1/messages",
+    r = requests.get("https://webexapis.com/v1/message",
                          params = GetParameters, 
                          headers = {'Authorization': f'Bearer {accessToken}'}
                     )
